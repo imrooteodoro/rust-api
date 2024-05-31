@@ -1,0 +1,27 @@
+# Arquivos e diretórios locais
+Cargo.lock
+target/
+/.vscode/
+/.idea/
+
+# Arquivos de compilação
+*.rs.bk
+*.rlib
+*.rmeta
+*.crate
+*.so
+*.dylib
+*.exe
+*.pdb
+*.db
+*.o
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Outros arquivos temporários ou de configuração
+*.swp
+*.swo
+*.tmp
+*.log

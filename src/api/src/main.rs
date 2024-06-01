@@ -13,7 +13,7 @@ use routes::index::*;
 use routes::sum::*;
 use routes::info::*;
 use routes::user::*;
-
+use rocket::fs::FileServer;
 
 
 
@@ -21,6 +21,7 @@ use routes::user::*;
 #[launch]
 fn rocket() -> _ {
     rocket::build()
+        .mount("/public",FileServer::from("public"))
         .mount("/", routes![index])
         .mount("/sum", routes![sum])
         .mount("/info", routes![info])
